@@ -27,7 +27,7 @@ async function getWeather(city){
     document.querySelector(".wind-val").innerText = data.wind.speed + " km/hr";
 
     let dataImage = data.weather[0].main.toLowerCase();
-    weatherImage.src = `/images/${dataImage}.png`;
+    weatherImage.src = `./images/${dataImage}.png`;
 }
  
 btn.addEventListener("click", ()=>{
