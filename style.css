@@ -45,18 +45,7 @@ body{
     margin-right: 30px;
     color: rgb(28, 27, 34);
 }
-@media (max-width: 500px) {
-    .search-box{
-        margin-right: 5px;
-        padding-right: 20px 0;
-    }
-}
-@media (max-width: 450px) {
-    .weather{
-        padding: 35px 5px;
-        width: 95vw;
-    }
-}
+
 .btn{
    border: 0;
    border-radius: 50%;
@@ -64,7 +53,6 @@ body{
    width: 60px;
    
 }
-
 .btn .search-png{
    width: 25px;
 }
@@ -75,6 +63,25 @@ body{
 .btn:hover{
     box-shadow: 2px 2px 20px  white;
     cursor: pointer;
+}
+@media (max-width: 500px) {
+    .search-box{
+        margin-right: 5px;
+        padding-right: 20px 0;
+    }
+}
+@media (max-width: 450px) {
+    .weather{
+        padding: 35px 20px;
+        width: 95vw;
+    }
+    .search-box{
+        padding: 20px 5px;
+        flex: 0;
+    }
+    .search{
+        justify-content: space-between;
+    }
 }
 /* Weather details- image, temp, city*/
 
