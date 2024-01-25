@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+body{
+    background-color: rgb(28, 27, 34);
+}
+
+/* main section - weather */
+.weather{
+    margin: 5vw auto 0;
+    background: linear-gradient(130deg, #1a6ec7, rgb(23, 215, 218));
+    width: 90%;
+    max-width: 500px;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+/* title */
+
+.title-weather{
+    font-size: 3.2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/* search and button section */
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 10px;
+}
+
+.search-box{
+    padding: 20px;
+    font-size: 1rem;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    flex: 1;
+    margin-right: 30px;
+    color: rgb(28, 27, 34);
+}
+@media (max-width: 500px) {
+    .search-box{
+        margin-right: 5px;
+        padding-right: 20px 0;
+    }
+}
+@media (max-width: 450px) {
+    .weather{
+        padding: 35px 5px;
+        width: 95vw;
+    }
+}
+.btn{
+   border: 0;
+   border-radius: 50%;
+   height: 60px;
+   width: 60px;
+   
+}
+
+.btn .search-png{
+   width: 25px;
+}
+.btn{
+    transition: all .5s;
+
+}
+.btn:hover{
+    box-shadow: 2px 2px 20px  white;
+    cursor: pointer;
+}
+/* Weather details- image, temp, city*/
+
+.weather-img{
+    height: 10rem;
+    margin-bottom: -15px;
+}
+
+.temp-details{
+    display: block;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center;
+    color: rgb(28, 27, 34);
+}
+
+.temp{
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.feelsLike-temp{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.temp-city{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.city-name{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.city-description{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/* other details- humidity, wind speed */
+
+.other-details{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 20px 0 20px;
+}
+.humidity{
+    display: flex;
+    gap: .5rem;
+}
+
+.hunidity-img, .wind-img{
+    height: 2.2rem;
+}
+.wind{
+    display: flex;
+    gap: .5rem;
+}
+
+.humidity-val, .wind-val{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.humidity-pera, .wind-pera{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.humidity-details, .wind-details{
+    margin-top: -10px;
+}
+
+.weather-details{
+    display: none;
+    
+} 
+
+
+.error-msg{
+    margin-left: 12px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 15px;
+    color: rgb(28, 27, 34);
+    display: none;
+}
