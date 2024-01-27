@@ -31,5 +31,10 @@ async function getWeather(city){
 }
  
 btn.addEventListener("click", ()=>{
+if(cityName.value == ''){
+
+}else {
     getWeather(cityName.value);
-})
+}
+});
+
