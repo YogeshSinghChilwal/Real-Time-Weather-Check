@@ -32,7 +32,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 10px 10px;
+    margin: 10px;
 }
 
 .search-box{
@@ -64,23 +64,20 @@ body{
     box-shadow: 2px 2px 20px  white;
     cursor: pointer;
 }
-@media (max-width: 500px) {
-    .search-box{
-        margin-right: 5px;
-        padding-right: 20px 0;
-    }
-}
-@media (max-width: 450px) {
+@media (max-width: 600px) {
     .weather{
-        padding: 35px 20px;
-        width: 95vw;
-    }
-    .search-box{
-        padding: 20px 5px;
-        flex: 0;
+        padding: 35px 15px;
     }
     .search{
-        justify-content: space-between;
+        margin: 10px 0;
+    }
+    .search-box{
+        padding: 15px;
+        flex: 0;
+    }
+    .btn{
+        height: 50px;
+        width: 50px;
     }
 }
 /* Weather details- image, temp, city*/
